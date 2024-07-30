@@ -15,7 +15,7 @@ function marginBottomForMain() {
   main.style.marginBottom = rect.height + "px";
   console.log(rect);
 }
-document.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   // updateViewportInfo();
   marginBottomForMain();
 });
