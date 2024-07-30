@@ -11,7 +11,8 @@ function updateViewportInfo() {
 function marginBottomForMain() {
   const footer = document.querySelector(".footer");
   const rect = footer.getBoundingClientRect();
-  console.log(footer);
+  const main = document.querySelector(".main");
+  main.style.marginBottom = rect.height + "px";
   console.log(rect);
 }
 document.addEventListener("load", () => {
